@@ -1,0 +1,11 @@
+2018.7.31 12:54   StHeader.js   navTitles添加一项首页标签
+2018.7.31 12:57   StIndex.js    添加文件夹Stindex,新建首页组件
+2018.7.31 13:19   StRoute.js    添加StIndex组件路由       结果:所有页面空白
+2018.7.31 14:40   StRoute.js    当import新的组件时页面即不渲染,考虑在store和connect出现问题
+2018.7.31 14.50   StRoute.js    修改成功,页面重新渲染
+2018.8.1  9:50    StSignIn.js   修改47行页面路径practice->index
+2018.8.1  9:54    StHerder.js   修改logo跳转路径到index,标签显示正常,开始修改首页界面
+2018.8.1  14:47   StIndex.js    对照StSummary创建表格
+2018.8.1  15:34   StIndex.js    首页只可以显示总结的数据
+2018.8.2          StIndex.js    首页可以显示全部数据,按钮可以跳转
+2018.8.3  10:03   StIndex.js    首页数据排序实现,但是不能自动刷新
