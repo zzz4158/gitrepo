@@ -16,7 +16,7 @@ import Test from './Test'
 import StTaskEdit from '../task/StTaskEdit'
 import StChangeLog from '../unauth/StChangeLog'
 import StFeedback from '../user/StStudentFeedback'
-
+import StIndex from '../index/StIndex'
 
 import store from '../store'
 
@@ -60,6 +60,7 @@ export default class StRoute extends Component{
 			<Router history={hashHistory}>
 				<Route path="/" component={App}>
 					<IndexRedirect to={this.indexRedirectUrl} />
+					<Route path="index" component={StIndex} onEnter={this.requireAccess}/>
 					<Route path="student-info" component={StStudentInfo} onEnter={this.requireAccess}/>
 					{/*<Route path="student-detail/:userId" component={StStudentDetail} onEnter={this.requireAccess}/>*/}
 					<Route
